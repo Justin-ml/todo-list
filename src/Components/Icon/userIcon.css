@@ -1,0 +1,15 @@
+.user-icon{
+    padding: 12px;
+    position: absolute;
+    right: 20px;
+    
+
+}
+
+.user-icon:hover{
+    cursor: pointer;
+}
+
+i.icons .icon:first-child {
+    margin: 0;
+}
