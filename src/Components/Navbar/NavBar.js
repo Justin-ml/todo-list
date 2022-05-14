@@ -1,28 +1,18 @@
 import React from "react";
-import navBar from "../Navbar/navBar.css";
+import "../Navbar/navBar.css";
 import UserIcon from "../Icon/UserIcon";
 
-
 function NavBar() {
-    return(
-      <>
+  return (
+    <>
       <div className="nav-main">
         <div className="title">
-         <p>TodoList</p>
+          <p>TodoList</p>
         </div>
-          <UserIcon />
+        <UserIcon />
       </div>
-      </>
-    ) 
-    
-  }
-
-
-
-
-
-
-
-
+    </>
+  );
+}
 
 export default NavBar;
