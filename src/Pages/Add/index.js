@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import "./add.css";
+import DateSelector from "../../Components/DateSelector/DateSelector";
+
 
 const Add = () => {
-  return <h2>Adding page</h2>;
+
+
+
+
+
+  return (
+    <form className="form"  >
+      <input type="text" placeholder="Enter Task...." className="input" />
+      <button type="submit" id="addButton">
+        Add
+      </button>
+      <DateSelector />
+    </form>
+  );
 };
 
 export default Add;
