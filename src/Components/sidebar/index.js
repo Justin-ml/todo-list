@@ -40,8 +40,10 @@ const SideBar = () => {
           </Link>
         </Menu.Item>
         <Menu.Item>
+          <Link to="/list">
           <Icon name="list" />
           List
+          </Link>
         </Menu.Item>
       </Sidebar>
       <Outlet />
