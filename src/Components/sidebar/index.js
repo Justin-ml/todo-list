@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Sidebar, Menu, Icon, Grid } from "semantic-ui-react";
-import "./sideBar.css";
+import "./sidebar.css";
 import { Link, Outlet } from "react-router-dom";
 
 const SideBar = () => {
