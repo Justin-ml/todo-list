@@ -7,13 +7,14 @@ import "react-datepicker/dist/react-datepicker.css";
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
 const DateSelector = () => {
-  const [startDate, setStartDate] = useState(new Date());
+  const [startDate, setStartDate] = useState("");
   return (
     <DatePicker
       placeholderText="select Date"
       selected={startDate}
       onChange={(date) => setStartDate(date)}
       isClearable
+      
     />
   );
 };

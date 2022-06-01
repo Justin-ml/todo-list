@@ -1,22 +1,29 @@
 import React, { useState } from "react";
 import "./add.css";
 import DateSelector from "../../Components/DateSelector/DateSelector";
+import Form from '../../Components/Form'
+
 
 
 const Add = () => {
 
+  const [todos,setTodos] = useState([]);
+
+  const additionHandler = (todo)=>{
+    setTodos([...todos,todo]);
+
+  }
 
 
 
 
   return (
-    <form className="form"  >
-      <input type="text" placeholder="Enter Task...." className="input" />
-      <button type="submit" id="addButton">
-        Add
-      </button>
-      <DateSelector />
+    <form className="form">
+    <Form  onSubmit={additionHandler}  >
+    </Form>
+    <DateSelector />
     </form>
+    
   );
 };
 
